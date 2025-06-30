@@ -1,0 +1,111 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 35 100% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 35 100% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 35 100% 20%;
+
+    --primary: 30 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 100% 60%;
+    --secondary-foreground: 35 100% 20%;
+
+    --muted: 40 30% 96%;
+    --muted-foreground: 35 20% 40%;
+
+    --accent: 40 100% 90%;
+    --accent-foreground: 35 100% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 35 30% 90%;
+    --input: 35 30% 90%;
+    --ring: 30 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 35 20% 40%;
+    --sidebar-primary: 30 100% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 40 30% 96%;
+    --sidebar-accent-foreground: 35 100% 20%;
+    --sidebar-border: 35 30% 90%;
+    --sidebar-ring: 30 100% 50%;
+  }
+
+  .dark {
+    --background: 35 30% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 35 30% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 35 30% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 30 100% 50%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 40 30% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 40 30% 20%;
+    --muted-foreground: 35 20% 70%;
+
+    --accent: 40 30% 20%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 40 30% 20%;
+    --input: 40 30% 20%;
+    --ring: 30 100% 50%;
+
+    --sidebar-background: 35 30% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 30 100% 50%; 
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 30% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 40 30% 20%;
+    --sidebar-ring: 30 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Category menu hover effects */
+.category-link {
+  @apply relative;
+}
+
+.category-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 ease-in-out;
+}
+
+.category-link:hover::after {
+  @apply w-full;
+}
+
