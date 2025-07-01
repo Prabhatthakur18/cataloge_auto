@@ -18,10 +18,10 @@ const Footer = () => {
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           {/* Company Info */}
-          <div className="lg:col-span-2">
+          <div>
             <div className="flex items-center mb-4">
               <Factory className="h-8 w-8 text-blue-400 mr-3" />
               <h3 className="text-2xl font-bold text-white">Autoform</h3>
@@ -119,18 +119,6 @@ const Footer = () => {
                 <span className="text-gray-300">Mon-Sat: 9:30AM - 6:00PM</span>
               </li>
             </ul>
-            
-            {/* Help Section */}
-            <div className="mt-8">
-              <h5 className="text-md font-medium mb-3 text-white">Quick Help</h5>
-              <Link 
-                to="/faqs" 
-                className="group flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-200"
-              >
-                <ChevronRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform duration-200" />
-                FAQs
-              </Link>
-            </div>
           </div>
         </div>
       </div>

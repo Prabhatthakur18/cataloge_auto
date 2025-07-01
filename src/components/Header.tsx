@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Car,
@@ -30,20 +30,59 @@ import {
   Compass,
 } from 'lucide-react';
 import { Input } from '@/components/ui/input';
-import { getMainCategories, getSubcategories } from '@/data/mockData';
+import { getMainCategories, getSubcategories, products } from '@/data/mockData';
 import NavWishlist from './NavWishlist';
-import logo from '/autologo-removebg-preview.png'; // adjust the path as per your project
+import logo from '/autologo-removebg-preview.png';
 
 const Header = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [showSearchResults, setShowSearchResults] = useState(false);
   const [hoveredCategory, setHoveredCategory] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileExpandedCategory, setMobileExpandedCategory] = useState(null);
+  const searchRef = useRef(null);
   const mainCategories = getMainCategories();
+
+  // Search functionality
+  useEffect(() => {
+    if (searchTerm.length >= 3) {
+      const filteredProducts = products.filter(product =>
+        product.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setSearchResults(filteredProducts.slice(0, 8)); // Limit to 8 results
+      setShowSearchResults(true);
+    } else {
+      setSearchResults([]);
+      setShowSearchResults(false);
+    }
+  }, [searchTerm]);
+
+  // Close search results when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setShowSearchResults(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log('Searching for:', searchTerm);
+    if (searchResults.length > 0) {
+      // Navigate to first result or implement search results page
+      window.location.href = `/product/${searchResults[0].id}`;
+    }
+  };
+
+  const handleSearchResultClick = (productId) => {
+    setShowSearchResults(false);
+    setSearchTerm('');
   };
 
   const toggleMobileMenu = () => {
@@ -106,18 +145,58 @@ const getCategoryIcon = (name) => {
           </Link>
 
           {/* Desktop Search bar */}
-          <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-md mx-8">
-            <div className="relative w-full">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-              <Input
-                type="search"
-                placeholder="Search products..."
-                className="pl-10 pr-4 w-full"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-            </div>
-          </form>
+          <div className="hidden md:flex flex-1 max-w-md mx-8 relative" ref={searchRef}>
+            <form onSubmit={handleSearch} className="w-full">
+              <div className="relative w-full">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+                <Input
+                  type="search"
+                  placeholder="Search products..."
+                  className="pl-10 pr-4 w-full"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onFocus={() => {
+                    if (searchTerm.length >= 3) {
+                      setShowSearchResults(true);
+                    }
+                  }}
+                />
+              </div>
+            </form>
+
+            {/* Search Results Dropdown */}
+            {showSearchResults && searchResults.length > 0 && (
+              <div className="absolute top-full left-0 right-0 bg-white border border-gray-200 rounded-md shadow-lg mt-1 max-h-96 overflow-y-auto z-50">
+                {searchResults.map((product) => (
+                  <Link
+                    key={product.id}
+                    to={`/product/${product.id}`}
+                    className="flex items-center p-3 hover:bg-gray-50 border-b border-gray-100 last:border-b-0"
+                    onClick={() => handleSearchResultClick(product.id)}
+                  >
+                    <img
+                      src={product.images[0]}
+                      alt={product.name}
+                      className="w-12 h-12 object-cover rounded mr-3 flex-shrink-0"
+                    />
+                    <div className="flex-grow">
+                      <div className="font-medium text-sm text-gray-900 line-clamp-1">
+                        {product.name}
+                      </div>
+                      <div className="text-sm text-brand-orange font-semibold">
+                        ₹{product.price.toFixed(2)}
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+                {searchTerm.length >= 3 && searchResults.length === 0 && (
+                  <div className="p-4 text-center text-gray-500">
+                    No products found for "{searchTerm}"
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
 
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-4">
@@ -205,7 +284,7 @@ const getCategoryIcon = (name) => {
 
         {/* Mobile Search bar */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t">
+          <div className="md:hidden py-4 border-t" ref={searchRef}>
             <form onSubmit={handleSearch} className="mb-4">
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
@@ -215,9 +294,45 @@ const getCategoryIcon = (name) => {
                   className="pl-10 pr-4 w-full"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
+                  onFocus={() => {
+                    if (searchTerm.length >= 3) {
+                      setShowSearchResults(true);
+                    }
+                  }}
                 />
               </div>
             </form>
+
+            {/* Mobile Search Results */}
+            {showSearchResults && searchResults.length > 0 && (
+              <div className="bg-white border border-gray-200 rounded-md shadow-lg mb-4 max-h-64 overflow-y-auto">
+                {searchResults.map((product) => (
+                  <Link
+                    key={product.id}
+                    to={`/product/${product.id}`}
+                    className="flex items-center p-3 hover:bg-gray-50 border-b border-gray-100 last:border-b-0"
+                    onClick={() => {
+                      handleSearchResultClick(product.id);
+                      setIsMobileMenuOpen(false);
+                    }}
+                  >
+                    <img
+                      src={product.images[0]}
+                      alt={product.name}
+                      className="w-10 h-10 object-cover rounded mr-3 flex-shrink-0"
+                    />
+                    <div className="flex-grow">
+                      <div className="font-medium text-sm text-gray-900 line-clamp-1">
+                        {product.name}
+                      </div>
+                      <div className="text-sm text-brand-orange font-semibold">
+                        ₹{product.price.toFixed(2)}
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
         )}
 
