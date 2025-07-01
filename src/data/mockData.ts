@@ -26,20 +26,20 @@ export const categories: Category[] = [
 
   // Subcategories for the Accessories
   { id: "4-wheeler-accessories", name: "4 Wheeler Accessories", parentId: "accessories", image: "/images/4w-acc/Screenshot 2025-06-11 162640.png" },
-  { id: "2-wheeler-accessories", name: "2 Wheeler Accessories", parentId: "accessories", image: "/images/4w-acc/Screenshot 2025-06-11 162640.png" },
+  { id: "2-wheeler-accessories", name: "2 Wheeler Accessories", parentId: "accessories", image: "/images/bannersforcataloguewebsite/02.jpg" },
 
   // Sub-Subcategories of the Accessories (4w)
-  { id: "healthy-memory-for-comfort", name: "Healthy Memory For Comfort", parentId: "4-wheeler-accessories", image: "/New folder/adsa.jpg" },
-  { id: "polyfill-range", name: "PolyFill Range", parentId: "4-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
-  { id: "premium-steering-covers", name: "Premium Steering Covers", parentId: "4-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
-  { id: "innovative-organizers", name: "Innovative Organizers", parentId: "4-wheeler-accessories", image: "https://images.unsplash.com/photo-1605152322256-ff7c17bedd5b?q=80&w=2070&auto=format&fit=crop" },
-  { id: "essential-tissue-box", name: "Essential Tissue Boxes", parentId: "4-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
-  { id: "padded-seat-covers", name: "Padded Seat Covers", parentId: "4-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
-  { id: "Electronic-accessories", name: "Electronic Accessories", parentId: "4-wheeler-accessories", image: "https://images.unsplash.com/photo-1605152322256-ff7c17bedd5b?q=80&w=2070&auto=format&fit=crop" },
-  { id: "car-utility", name: "Car Utility", parentId: "4-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
-  { id: "car-care-products", name: "Car Care Products", parentId: "4-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
-  { id: "Easy-fit", name: "Easy Fit (DIY)", parentId: "4-wheeler-accessories", image: "https://images.unsplash.com/photo-1605152322256-ff7c17bedd5b?q=80&w=2070&auto=format&fit=crop" },
-  { id: "car-body-cover", name: "Car Body Cover", parentId: "4-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
+  { id: "healthy-memory-for-comfort", name: "Healthy Memory For Comfort", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/01.jpg" },
+  { id: "polyfill-range", name: "PolyFill Range", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/Polyfill-Range.jpg" },
+  { id: "premium-steering-covers", name: "Premium Steering Covers", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/Steering-Cover.jpg" },
+  { id: "innovative-organizers", name: "Innovative Organizers", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/Innovative-Organizer.jpg" },
+  { id: "essential-tissue-box", name: "Essential Tissue Boxes", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/Tissue-Box.jpg" },
+  { id: "padded-seat-covers", name: "Padded Seat Covers", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/Padded-Seat-Covers.jpg" },
+  { id: "Electronic-accessories", name: "Electronic Accessories", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/Electronic.jpg" },
+  { id: "car-utility", name: "Car Utility", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/Car-Utility.jpg" },
+  { id: "car-care-products", name: "Car Care Products", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/Car-Care.jpg" },
+  { id: "Easy-fit", name: "Easy Fit (DIY)", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/DIY-Seat.jpg" },
+  { id: "car-body-cover", name: "Car Body Cover", parentId: "4-wheeler-accessories", image: "/images/bannersforcataloguewebsite/Car-Body-Cover.jpg" },
  
 
 
@@ -59,7 +59,7 @@ export const categories: Category[] = [
   { id: "back-rest-pad", name: "Back Rest Pad", parentId: "2-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
   { id: "foot-mat", name: "Foot Mat", parentId: "2-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
  { id: "tank-cover", name: "Tank Cover", parentId: "2-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
-  { id: "led-light", name: "LED Light", parentId: "2-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
+  { id: "2w-electronics", name: "Electronic Accessories", parentId: "2-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
   { id: "cleaning-kit", name: "Cleaning Kit", parentId: "2-wheeler-accessories", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
 
  
@@ -88,9 +88,9 @@ export const categories: Category[] = [
  
  
 // sub-sub categories for the 2 wheeler starts----------------------------------------------
-  { id: "bullet", name: "Bullet", parentId: "2-wheeler-seat-cover", image: "https://autoform-image.s3.ap-south-1.amazonaws.com/products/U Cross 1.jpg" },
-  { id: "bike",   name: "Bike", parentId:   "2-wheeler-seat-cover", image: "https://autoform-image.s3.ap-south-1.amazonaws.com/products/U Active Plus Dual1.jpg" },
-  { id: "scooty", name: "Scooter", parentId: "2-wheeler-seat-cover", image: "https://autoform-image.s3.ap-south-1.amazonaws.com/products/u-active-plus.jpg" },
+  { id: "bullet", name: "Bullet", parentId: "2-wheeler-seat-cover", image: "/images/bannersforcataloguewebsite/03.jpg" },
+  { id: "bike",   name: "Bike", parentId:   "2-wheeler-seat-cover", image: "/images/bannersforcataloguewebsite/05.jpg" },
+  { id: "scooty", name: "Scooter", parentId: "2-wheeler-seat-cover", image: "/images/bannersforcataloguewebsite/06.jpg" },
 
 // sub-sub categories for the 2 wheeler ends----------------------------------------------
 
@@ -1720,6 +1720,8 @@ export const products: Product[] = [
   rating: 5.0,
   reviews: reviews["1"]
 },
+
+
 {
   id: "led-fog-lamp",
   name: "LED Fog Lamp for Car",
@@ -1872,6 +1874,40 @@ export const products: Product[] = [
   rating: 5.0,
   reviews: reviews["1"]
 },
+{
+  id: "nebula-2w-led-light",
+  name: "Nebula 2 Wheeler Led- 10W",
+  price: 855,
+  description: [
+    "Powerful 10W LED for enhanced night visibility and road safety.",
+    "Weather-resistant build ideal for 2-wheeler outdoor usage.",
+    "Low power consumption with high brightness output.",
+    "Easy to install with durable housing and stable fitting.",
+    "Improves aesthetics while providing focused beam lighting.",
+    "Compact design suitable for most bikes and scooters."
+  ],
+  images: [
+    "/images/2w-body-cover/Screenshot 2025-06-13 122319.png",
+    "/images/2w-body-cover/Screenshot 2025-06-13 122521.png",
+    "/images/2w-body-cover/Screenshot 2025-06-13 122637.png"
+  ],
+  categoryId: "light-utility",
+  additionalInfo: [
+    "In The Package: Set of 2 Nebula 10W LED lights for 2-wheelers.",
+    "Note: Product images are for representation purposes only. Actual color and appearance may vary slightly depending on screen settings and lighting.",
+    "Disclaimer: Ensure compatibility before installation. Manufacturing defects will be replaced; refunds are not applicable."
+  ],
+  inStock: true,
+  rating: 4.6,
+  reviews: reviews["1"]
+},
+
+
+
+
+
+
+
 // products for the mats 
 //1
 {
@@ -2629,7 +2665,7 @@ export const products: Product[] = [
     "/images/2w-body-cover/Screenshot 2025-06-13 122521.png",
     "/images/2w-body-cover/Screenshot 2025-06-13 122637.png"
   ],
-  categoryId: "led-light",
+  categoryId: "2w-electronics",
   additionalInfo: [
     "In The Package: Set of 2 Nebula 10W LED lights for 2-wheelers.",
     "Note: Product images are for representation purposes only. Actual color and appearance may vary slightly depending on screen settings and lighting.",
@@ -3484,6 +3520,188 @@ additionalInfo: [
   rating: 4.6,
   reviews: reviews["1"]
 },
+
+
+{
+  id: "led-head-lamp-for-car",
+  name: "LED Head Lamp for Car",
+  price: 7999,
+  description: [
+    "High-performance LED headlamp designed to enhance nighttime visibility and driving safety.",
+    "Features powerful, energy-efficient LEDs with a long lifespan and consistent brightness.",
+    "Plug-and-play installation with universal fitment for most car models.",
+    "Shockproof and water-resistant construction for reliable performance in all weather conditions.",
+    "Stylish and modern look to upgrade the overall appearance of your vehicle.",
+    "The Products may Vary as Per the Car Specific"
+  ],
+  images: [
+    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/led-head-lamp.png",
+    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/led-head-lamp.png"
+  ],
+  categoryId: "Electronic-accessories",
+  additionalInfo: [
+    "In The Package: 1 x Pair of LED Head Lamps.",
+    "Note: Product images are for reference only. Actual product may vary based on model and availability.",
+    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
+  ],
+  inStock: true,
+  rating: 5.0,
+  reviews: reviews["1"]
+},
+
+
+{
+  id: "led-fog-lamp",
+  name: "LED Fog Lamp for Car",
+  price: 7999,
+  description: [
+    "High-performance LED fog lamps designed to cut through fog, rain, and low-visibility conditions.",
+    "Equipped with energy-efficient LEDs that provide a focused, wide beam pattern for better road visibility.",
+    "Durable, shockproof, and water-resistant housing ensures long-lasting performance in all weather.",
+    "Easy plug-and-play installation with universal or vehicle-specific fitment.",
+    "Enhances both safety and style with a modern, sleek design.",
+    "Note: Products may vary as per specific car models."
+  ],
+  images: [
+    "/images/fog lamp/fog_light_2_resized.png",
+    "/images/fog lamp/fog_light_1_resized.png",
+    "/images/fog lamp/fog_light_3_resized.png",
+    "/images/fog lamp/fog_light_4_resized.png",
+   
+  ],
+  categoryId: "Electronic-accessories",
+  additionalInfo: [
+    "In The Package: 1 x Pair of LED Fog Lamps.",
+    "Note: Product images are for reference only. Actual product may vary based on model and availability.",
+    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
+  ],
+  inStock: true,
+  rating: 5.0,
+  reviews: reviews["1"]
+},
+
+
+//air inflator 
+{
+  id: "tyre-inflator",
+  name: "EMPORIO Auto Cut Air Inflator – 150W Power",
+  price: 4099,
+  description: [
+    "Auto Cut-Off Function – Prevents over-inflation by automatically stopping at the desired pressure.",
+    "Powerful 150W Motor – Delivers efficient and quick inflation.",
+    "Maximum Pressure: 150 PSI – Suitable for inflating car, bike, and other vehicle tires effortlessly.",
+    "Air Flow: 35 LPM – Ensures rapid inflation for a hassle-free experience.",
+    "Voltage: DC 12V – Easily plugs into your car’s cigarette lighter socket for instant use.",
+    "Compact & Lightweight – Designed for easy storage in your car without taking up much space.",
+    "Digital display shows accurate pressure readings in PSI, BAR, KPA, and KG/CM².",
+    "Built-in LED light provides visibility in low-light or emergency situations.",
+    "Easy to use – just connect, set the pressure, and let the inflator do the work."
+  ],
+  images: [
+    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/tire-inflator-1.jpg",
+    "/images/inflator/Tyre-Inflator.png",
+
+  ],
+  categoryId: "Electronic-accessories",
+  additionalInfo: [
+    "In The Package: 1 x EMPORIO Auto Cut Air Inflator with power cord and nozzle attachments.",
+    "Note: Product images are for reference only. Actual product may vary slightly based on stock availability.",
+    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
+  ],
+  inStock: true,
+  rating: 5.0,
+  reviews: reviews["1"]
+},
+
+//portable tyre inflator
+{
+  id: "portable-tyre-inflator",
+  name: "EMPORIO Portable Car Compressor – Compact & Efficient Tire Inflator",
+  price: 3499,
+  description: [
+    "Powerful 150W motor for quick and efficient tyre inflation – ideal for cars, bikes, and SUVs.",
+    "Automatic shut-off feature stops inflation when the desired pressure is reached for safe operation.",
+    "Digital display shows accurate pressure readings in PSI, BAR, KPA, and KG/CM².",
+    "Compact and portable design with built-in LED light for night-time or emergency use.",
+    "Easy to use – just plug into the car’s 12V socket and start inflating instantly."
+  ],
+  images: [
+    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/Small-Inflator-1.jpg",
+    "/images/inflator/Tyre-Inflator02.png"
+  ],
+  categoryId: "Electronic-accessories",
+  additionalInfo: [
+    "In The Package: 1 x EMPORIO Portable Car Compressor with power cord and nozzle attachments.",
+    "Note: Product images are for reference only. Actual product may vary slightly based on stock availability.",
+    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
+  ],
+  inStock: true,
+  rating: 5.0,
+  reviews: reviews["1"]
+},
+
+// vaccum cleaner
+{
+  id: "portable-vaccum-cleaner",
+  name: "EMPORIO Portable Car Vacuum Cleaner – Wet & Dry Cleaning",
+  price: 2499,
+  description: [
+    "Wet & Dry Cleaning – Versatile for liquid spills and dry debris",
+    "High Suction Power – Ensures effective and quick cleaning",
+    "Lightweight & Portable – Easy to carry and store",
+    "HEPA Filter – Captures fine dust and allergens",
+    "Deep Cleaning – Reaches tight spaces for thorough results"
+  ],
+  images: [
+    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/Portable-Vacuum-Cleaner-1.jpg"
+  ],
+  categoryId: "Electronic-accessories",
+  additionalInfo: [
+    "In The Package: 1 x EMPORIO Portable Vacuum Cleaner",
+    "Note: Product images are for reference only. Actual product may vary slightly based on stock availability.",
+    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
+  ],
+  inStock: true,
+  rating: 5.0,
+  reviews: reviews["1"]
+},
+// car charger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////
   // padded seat cover
   {
   id: "padded-seat-cover-bt",
