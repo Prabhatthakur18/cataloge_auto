@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,6 +9,7 @@ import Layout from "./components/Layout";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
 import ContactPage from "./pages/ContactPage";
+import ScrollToTop from "./components/ScrollToTop";
 import { WishlistProvider } from "./context/WishlistContext";
 
 const queryClient = new QueryClient();
@@ -21,6 +21,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Layout><Index /></Layout>} />
             <Route path="/category/:categoryId" element={<Layout><CategoryPage /></Layout>} />
