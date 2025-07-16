@@ -17,7 +17,7 @@ export const categories: Category[] = [
 
   //4w seat categories based on the material
  { id: "riviera", name: "REVIERA SERIES", parentId: "4-wheeler-seat-cover", image: "/images/Autoform - Swatch Book 12-4-22 T2.jpg" },
-  { id: "lucenzo", name: "LUCENZO/NAPPA SERIES", parentId: "4-wheeler-seat-cover", image: "/images/Autoform - Swatch Book 12-4-22 T1.jpg" },
+  { id: "lucenzo", name: "LUCENZO SERIES", parentId: "4-wheeler-seat-cover", image: "/images/Autoform - Swatch Book 12-4-22 T1.jpg" },
   { id: "signature", name: "SIGNATURE SERIES", parentId: "4-wheeler-seat-cover", image: "/images/Autoform - Swatch Book 22-12-23.jpg" },
   { id: "emporio", name: "EMPORIO SERIES", parentId: "4-wheeler-seat-cover", image: " /images/Autoform - Swatch Book 12-4-22 T4.jpg" },
 
@@ -82,11 +82,21 @@ export const categories: Category[] = [
   { id: "dvr", name: "DVR", parentId: "audio-security", image: "/images/dvr/wmremove-transformed.png" },
  
   // Subcategories for Speakers
-  { id: "speaker", name: "Speakers", parentId: "audio-series-cadence", image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2069&auto=format&fit=crop" },
+  
+  { id: "speaker", name: "Speakers", parentId: "audio-series-cadence", image: "/images/Untitled.png" },
+    { id: "subwoofer", name: "Sub Woofers", parentId: "audio-series-cadence", image: "https://cadencesound.com/wp-content/uploads/2024/12/bm12d1.jpg" },
+
   { id: "amplifier", name: "Amplifier", parentId: "audio-series-cadence", image: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=1974&auto=format&fit=crop" },
   { id: "ampkit", name: "AmpKit", parentId: "audio-series-cadence", image: "https://images.unsplash.com/photo-1524678714210-9917a6c619c2?q=80&w=2069&auto=format&fit=crop" },
  
- 
+// speakers sub category 
+  { id: "coaxial", name: "Coaxial Speakers", parentId: "speaker", image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2069&auto=format&fit=crop" },
+  { id: "component", name: "Component Speakers", parentId: "speaker", image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2069&auto=format&fit=crop" },
+  // { id: "speaker", name: "Speakers", parentId: "audio-series-cadence", image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2069&auto=format&fit=crop" },
+
+
+
+
 // sub-sub categories for the 2 wheeler starts----------------------------------------------
   { id: "bullet", name: "Bullet", parentId: "2-wheeler-seat-cover", image: "/images/bannersforcataloguewebsite/03.jpg" },
   { id: "bike",   name: "Bike", parentId:   "2-wheeler-seat-cover", image: "/images/bannersforcataloguewebsite/05.jpg" },
@@ -123,11 +133,13 @@ export const categories: Category[] = [
  { id: "back-seat-organiser", name: "Back Seat Organiser", parentId: "life-utility", image: "https://images.unsplash.com/photo-1489686995744-f47e995ffe61?q=80&w=2071&auto=format&fit=crop" },
   { id: "car-coat-hanger", name: "Car Coat Hanger", parentId: "life-utility", image: "https://images.unsplash.com/photo-1489686995744-f47e995ffe61?q=80&w=2071&auto=format&fit=crop" },
   { id: "food-tray", name: "Food Tray", parentId: "life-utility", image: "https://images.unsplash.com/photo-1489686995744-f47e995ffe61?q=80&w=2071&auto=format&fit=crop" },
- // Subcategories for Mat
-  { id: "2d-mat", name: "2D Mat", parentId: "mat", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
+ 
+ 
+  // Subcategories for Mat
+  { id: "pu-pvc", name: "PU/PVC", parentId: "mat", image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=2070&auto=format&fit=crop" },
   // { id: "3d-mat", name: "3D Mat", parentId: "mat", image: "https://images.unsplash.com/photo-1606028638131-29913d642c04?q=80&w=1972&auto=format&fit=crop" },
-  { id: "7d-mat", name: "7D Mat", parentId: "mat", image: "https://images.unsplash.com/photo-1603811478698-7e15b7d724b9?q=80&w=2070&auto=format&fit=crop" },
-  { id: "boot-mat", name: "Boot Mat", parentId: "mat", image: "https://images.unsplash.com/photo-1603811478698-7e15b7d724b9?q=80&w=2070&auto=format&fit=crop" },
+  { id: "tpe", name: "TPE", parentId: "mat", image: "https://images.unsplash.com/photo-1603811478698-7e15b7d724b9?q=80&w=2070&auto=format&fit=crop" },
+  // { id: "boot-mat", name: "Boot Mat", parentId: "mat", image: "https://images.unsplash.com/photo-1603811478698-7e15b7d724b9?q=80&w=2070&auto=format&fit=crop" },
 
 
 
@@ -493,7 +505,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2025/04/FSB12SA-02.jpg",
     "https://cadencesound.com/wp-content/uploads/2025/04/FSB12SA-03.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Enclosure Type: Active Sealed",
@@ -523,7 +535,7 @@ export const products: Product[] = [
     "Dust Cap: 3D Injected Poly and Model Number."
   ],
   "images": ["/images/subwoofer/Screenshot 2025-06-17 152734.png"],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Model: UX6VA",
     "Enclosure Type: 6.5 in. Active, Vented",
@@ -554,7 +566,7 @@ export const products: Product[] = [
     "Dust Cap: 3D Injected Poly for durability and aesthetics."
   ],
   "images": ["/images/subwoofer/ux8va.png"],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Model Number: UX8VA",
     "Enclosure Type: 8 in. Active, Vented",
@@ -587,7 +599,7 @@ export const products: Product[] = [
     "Dust Cap: 3D Injected Poly for added strength and visual appeal."
   ],
   "images": ["/images/subwoofer/qsb10a.png"],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Model Number: QSB10SA",
     "Enclosure Type: 10 inch. Active, Sealed",
@@ -621,7 +633,7 @@ export const products: Product[] = [
       "/images/c160/C160COAX-1 (3)-2.png",
       "/images/c160/C160COAX-1 (4)-5.png"
     ],
-    "categoryId": "speaker",
+    "categoryId": "coaxial",
     "additionalInfo": [
       "Set of 2 speakers + grille covers.",
       "Ideal for car front or rear doors.",
@@ -653,7 +665,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/iq653-03.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/iq653-04.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "coaxial",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 6.5″ 3-Way Coaxial",
@@ -691,7 +703,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/iq65k-02.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/iq65k-04.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "component",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 6.5″ 2-Way Component Kit",
@@ -727,7 +739,7 @@ export const products: Product[] = [
     "/images/subwoofer/Q652XiGE-3.png",
     "/images/subwoofer/Q652XiGE-4.png"
   ],
-  "categoryId": "speaker",
+  "categoryId": "coaxial",
   "additionalInfo": [
     "Model Number: IQ652Xi",
     "Size: 6.5 in.",
@@ -762,7 +774,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/iq65kge-06.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/iq65kge-03.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "component",
   "additionalInfo": [
     "Model Number: Q65KXi",
     "Application Type: Car",
@@ -802,7 +814,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/qr965-03.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/qr965-04.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "coaxial",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 6.5″ 2-Way Coaxial Car Audio",
@@ -841,7 +853,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/qr965k-07.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/qr965k-08.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "component",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 6.5″ 2-Way Component Kit",
@@ -879,7 +891,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/qrs65r-04.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/qrs65r-03.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "coaxial",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 6.5″ 2-Way Coaxial",
@@ -919,7 +931,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/qrs6k2-05.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/qrs6k2-04.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "component",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 6.5″ 2-Way Component Kit",
@@ -951,7 +963,7 @@ export const products: Product[] = [
     "Ideal for enthusiasts seeking immersive low-end reinforcement with sleek aesthetics."
   ],
   "images": ["/images/subwoofer/cdf8.png"],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Model Number: CDF82SA",
     "Type: Dual 10-inch Active Sealed Subwoofer",
@@ -1014,7 +1026,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/bm12d1-05.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/bm12d1-04.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 12″ Subwoofer",
@@ -1056,7 +1068,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/bm12d2-03.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/bm12d2-05.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 12″ Subwoofer",
@@ -1101,7 +1113,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/bm15d1-05.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/bm15d1-04.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 15″ Subwoofer",
@@ -1145,7 +1157,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/bm15d1-04.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/bm15d1-05.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 15″ Subwoofer",
@@ -1190,7 +1202,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/cmw124d-05.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/cmw124d-03.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 12″ Subwoofer",
@@ -1235,7 +1247,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/slw12s4-04.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/slw12s4-05.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 12″ Subwoofer",
@@ -1275,7 +1287,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/us6d4-05.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/us6d4-03.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 6″",
@@ -1314,7 +1326,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/us8d4-05.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/us8d4-04.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 8″",
@@ -1350,7 +1362,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/us10d4-04.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/us10d4-05.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 10″",
@@ -1385,7 +1397,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/us12d4-04.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/us12d4-05.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 12″",
@@ -1419,7 +1431,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/wb12d2-05.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/wb12d2-04.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 12″",
@@ -1458,7 +1470,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/wb12d4-05.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/wb12d4-04.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 12″",
@@ -1497,7 +1509,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/wb15d2-04.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/wb15d2-05.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 15″",
@@ -1536,7 +1548,7 @@ export const products: Product[] = [
     "https://cadencesound.com/wp-content/uploads/2024/12/wb15d4-04.jpg",
     "https://cadencesound.com/wp-content/uploads/2024/12/wb15d4-05.jpg"
   ],
-  "categoryId": "speaker",
+  "categoryId": "subwoofer",
   "additionalInfo": [
     "Application Type: Car",
     "Size & Type: 15″",
@@ -1891,7 +1903,7 @@ export const products: Product[] = [
     "/images/2w-body-cover/Screenshot 2025-06-13 122521.png",
     "/images/2w-body-cover/Screenshot 2025-06-13 122637.png"
   ],
-  categoryId: "light-utility",
+  categoryId: "light-utility  ",
   additionalInfo: [
     "In The Package: Set of 2 Nebula 10W LED lights for 2-wheelers.",
     "Note: Product images are for representation purposes only. Actual color and appearance may vary slightly depending on screen settings and lighting.",
@@ -1911,8 +1923,8 @@ export const products: Product[] = [
 // products for the mats 
 //1
 {
-  id: "12mm-care-2row",
-  name: "2D 12mm Care 2 Row Mat",
+  id: "12mm-care",
+  name: "12mm Care Mat",
   price: 3299,
   description: [
     "Premium 2D car floor mat with 12mm thickness for superior comfort and protection.",
@@ -1922,9 +1934,9 @@ export const products: Product[] = [
     "Easy to clean – simply wipe with a damp cloth or rinse with water."
   ],
   images: [
-    "/images/mats/Screenshot 2025-06-16 101705.png"
+    "/images/mats/12 MM CARE.jpg"
   ],
-  categoryId: "2d-mat",
+  categoryId: "pu-pvc",
   additionalInfo: [
     "In The Package: 1 x Set of 2D 12mm Car Mats (Full Set).",
     "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
@@ -1935,34 +1947,10 @@ export const products: Product[] = [
   reviews: reviews["1"]
 },
 
-{
-  id: "12mm-care-3row",
-  name: "2D 12mm Care 3 Row Mat",
-  price: 4999,
-  description: [
-    "Premium 2D car floor mat with 12mm thickness for superior comfort and protection.",
-    "Crafted from high-quality, water-resistant materials to keep your car interior clean.",
-    "Anti-skid backing ensures the mat stays in place during rides.",
-    "Custom-fit design for enhanced coverage and a sleek interior look.",
-    "Easy to clean – simply wipe with a damp cloth or rinse with water."
-  ],
-  images: [
-    "/images/mats/Screenshot 2025-06-16 101705.png"
-  ],
-  categoryId: "2d-mat",
-  additionalInfo: [
-    "In The Package: 1 x Set of 2D 12mm Car Mats (Full Set).",
-    "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
-    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
-  ],
-  inStock: true,
-  rating: 4.5,
-  reviews: reviews["1"]
-},
 //2
 {
-  id: "care-18-mm-universal-2row",
-  name: "2D Care 18mm Universal 2 Row Mat",
+  id: "care-18-mm-universal",
+  name: "18mm Care Universal ",
   price: 3299,
   description: [
     "Heavy-duty 2D car floor mat with 18mm thickness for enhanced cushioning and durability.",
@@ -1972,9 +1960,12 @@ export const products: Product[] = [
     "Low-maintenance and easy to clean – just shake off dirt or wipe with a damp cloth."
   ],
   images: [
-    "/images/mats/18mm-care.png"
+    "/images/mats/18 mm Universal  (4).jpg",
+    "/images/mats/18 mm Universal  (3).jpg",
+    "/images/mats/18 mm Universal  (2).jpg",
+    "/images/mats/18 mm Universal  (1).jpg"
   ],
-  categoryId: "2d-mat",
+  categoryId: "pu-pvc",
   additionalInfo: [
     "In The Package: 1 x Set of 2D 18mm Car Mats (Full Set).",
     "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
@@ -1985,34 +1976,11 @@ export const products: Product[] = [
   reviews: reviews["1"]
 },
 
-{
-  id: "care-18-mm-universal-3row",
-  name: "2D Care 18mm Universal 3 Row Mat",
-  price: 3299,
-  description: [
-    "Heavy-duty 2D car floor mat with 18mm thickness for enhanced cushioning and durability.",
-    "Made from high-quality, water-resistant material to protect against dirt, spills, and wear.",
-    "Anti-skid bottom layer prevents movement and ensures driving safety.",
-    "Universal fit design – compatible with most car models for a hassle-free installation.",
-    "Low-maintenance and easy to clean – just shake off dirt or wipe with a damp cloth."
-  ],
-  images: [
-    "/images/mats/18mm-care.png"
-  ],
-  categoryId: "2d-mat",
-  additionalInfo: [
-    "In The Package: 1 x Set of 2D 18mm Car Mats (Full Set).",
-    "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
-    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
-  ],
-  inStock: true,
-  rating: 4.5,
-  reviews: reviews["1"]
-},
+
 //3
 {
-  id: "universal-spike-2row",
-  name: "2D Spike Mat 2 Row",
+  id: "spike",
+  name: "Spike Mat",
   price: 4899,
   description: [
     "Stylish 2D car floor mat with a unique spike-texture design for superior grip and protection.",
@@ -2022,9 +1990,11 @@ export const products: Product[] = [
     "Effortless cleaning – shake off dust or rinse with water for a fresh look."
   ],
   images: [
-    "/images/mats/spike.png"
+    "/images/mats/SPIKE01.jpg",
+    "/images/mats/SPIKE.jpg",
+    
   ],
-  categoryId: "2d-mat",
+  categoryId: "pu-pvc",
   additionalInfo: [
     "In The Package: 1 x Set of 2D Spike Design Car Mats (Full Set).",
     "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
@@ -2035,35 +2005,11 @@ export const products: Product[] = [
   reviews: reviews["1"]
 },
 
-{
-  id: "universal-spike-3row",
-  name: "2D Spike Mat 3 Row",
-  price: 6799,
-  description: [
-    "Stylish 2D car floor mat with a unique spike-texture design for superior grip and protection.",
-    "Constructed using durable, water-resistant materials to keep your car interior clean and dry.",
-    "Spiked surface helps trap dirt and debris, making it ideal for all-weather use.",
-    "Universal fit with anti-skid backing ensures the mat stays securely in place.",
-    "Effortless cleaning – shake off dust or rinse with water for a fresh look."
-  ],
-  images: [
-    "/images/mats/spike.png"
-  ],
-  categoryId: "2d-mat",
-  additionalInfo: [
-    "In The Package: 1 x Set of 2D Spike Design Car Mats (Full Set).",
-    "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
-    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
-  ],
-  inStock: true,
-  rating: 4.5,
-  reviews: reviews["1"]
-},
 
 //4
 {
-  id: "u-max-plus-arrow-2row",
-  name: "2D U Max Plus Arrow 2 Row Mat",
+  id: "u-max-plus-arrow",
+  name: "U Max Plus Arrow",
   price: 6999,
   description: [
     "2D U Max Plus Arrow Mat with 12mm thickness designed for ultimate interior protection and comfort.",
@@ -2073,9 +2019,11 @@ export const products: Product[] = [
     "Effortless to maintain – just wipe with a damp cloth or rinse clean."
   ],
   images: [
-    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/U-MAX PLUS ARROW (1).JPG"
+    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/U-MAX PLUS ARROW (1).JPG",
+    "/images/mats/U-MAX PLUS ARROW (2).JPG",
+    "/images/mats/U-MAX PLUS ARROW (3).JPG"
   ],
-  categoryId: "2d-mat",
+  categoryId: "pu-pvc",
   additionalInfo: [
     "In The Package: 1 x Set of 2D U Max Plus Arrow Car Mats (Full Set).",
     "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
@@ -2086,35 +2034,12 @@ export const products: Product[] = [
   reviews: reviews["1"]
 },
 
-{
-  id: "u-max-plus-arrow-3row",
-  name: "2D U Max Plus Arrow 3 Row Mat",
-  price: 9999,
-  description: [
-    "2D U Max Plus Arrow Mat with 12mm thickness designed for ultimate interior protection and comfort.",
-    "Features a modern arrow-pattern texture that enhances grip and adds a stylish look to your car.",
-    "Made from high-grade, water-resistant material to guard against dust, spills, and wear.",
-    "Anti-skid bottom layer ensures the mat stays firmly in place during daily use.",
-    "Effortless to maintain – just wipe with a damp cloth or rinse clean."
-  ],
-  images: [
-    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/U-MAX PLUS ARROW (1).JPG"
-  ],
-  categoryId: "2d-mat",
-  additionalInfo: [
-    "In The Package: 1 x Set of 2D U Max Plus Arrow Car Mats (Full Set).",
-    "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
-    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
-  ],
-  inStock: true,
-  rating: 4.5,
-  reviews: reviews["1"]
-},
+
 //7D mats
 //1
 {
-  id: "7d-u-max-arrow-2-row",
-  name: "7D U Max Arrow Mat – 2-row",
+  id: "u-max-arrow",
+  name: "U Max Arrow ",
   price: 11999,
   description: [
     "Premium 7D car floor mat designed for 2-row vehicles, offering full coverage and luxury protection.",
@@ -2124,10 +2049,10 @@ export const products: Product[] = [
     "Custom-fit design ensures a snug fit and easy installation. Cleaning is effortless – simply wipe or rinse."
   ],
   images: [
-    "/images/mats/u-max-arrow.png",
+    "/images/mats/U-MAX ARROW.jpg",
     "https://autoform-image.s3.ap-south-1.amazonaws.com/products/7D-Umax-arrow-Black-silver.jpg"
   ],
-  categoryId: "7d-mat",
+  categoryId: "pu-pvc",
   additionalInfo: [
     "In The Package: 1 x Set of 7D U Max Arrow Mats (2-Row Full Set).",
     "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
@@ -2138,35 +2063,11 @@ export const products: Product[] = [
   reviews: reviews["1"]
 },
 
-{
-  id: "7d-u-max-arrow-3-row",
-  name: "7D U Max Arrow Mat – 3 Row",
-  price: 14999,
-  description: [
-    "Luxurious 7D car floor mat designed for 3-row vehicles, offering complete floor protection and premium aesthetics.",
-    "U Max Arrow pattern adds a sleek, modern look to your car's interior while improving grip underfoot.",
-    "Made with multi-layered materials including a quilted top, EVA foam middle, and anti-skid backing for comfort and durability.",
-    "Waterproof and dust-resistant to safeguard against everyday spills and debris.",
-    "Tailored fit for 3-row vehicles ensures full coverage and easy installation. Simple to clean with a cloth or water rinse."
-  ],
-  images: [
-    "/images/mats/u-max-arrow.png",
-    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/7D-Umax-arrow.jpg"
-  ],
-  categoryId: "7d-mat",
-  additionalInfo: [
-    "In The Package: 1 x Set of 7D U Max Arrow Mats (3-Row Full Set).",
-    "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
-    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
-  ],
-  inStock: true,
-  rating: 4.5,
-  reviews: reviews["1"]
-},
+
 //2
 {
-  id: "7d-u-max-nhb-2-row",
-  name: "7D U Max NHB 2 Row",
+  id: "u-max-nhb",
+  name: "U Max NHB",
   price: 11999,
   description: [
     "Premium 7D U Max NHB car floor mat designed for 2-row vehicles, offering high-end protection and elegant styling.",
@@ -2176,10 +2077,11 @@ export const products: Product[] = [
     "Custom-fit for 2-row vehicles – easy to install and clean with a simple wipe or rinse."
   ],
   images: [
-    "/images/mats/nhb.png",
-    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/U Max NHB.jpg"
+    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/U Max NHB.jpg",
+    "/images/mats/U Max NHB01.jpg",
+   
   ],
-  categoryId: "7d-mat",
+  categoryId: "pu-pvc",
   additionalInfo: [
     "In The Package: 1 x Set of 7D U Max NHB Mats (2-Row Full Set).",
     "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
@@ -2190,35 +2092,10 @@ export const products: Product[] = [
   reviews: reviews["1"]
 }
 ,
-{
-  id: "7d-u-max-nhb-3-row",
-  name: "7D U Max NHB 3 Row",
-  price: 14999,
-  description: [
-    "Luxury 7D U Max NHB floor mat tailored for 3-row vehicles, offering complete floor coverage and premium interior styling.",
-    "Multi-layered design includes a quilted top layer, high-density foam core, and anti-skid bottom for superior grip and comfort.",
-    "Water-resistant, dustproof, and scratch-resistant – perfect for protecting your car from everyday wear and tear.",
-    "NHB pattern design adds a bold, sophisticated look to your car’s cabin.",
-    "Engineered for 3-row vehicles with a custom-fit layout. Cleaning is hassle-free – just wipe or rinse clean."
-  ],
-  images: [
-    "/images/mats/nhb.png",
-    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/U Max NHB.jpg",
-  ],
-  categoryId: "7d-mat",
-  additionalInfo: [
-    "In The Package: 1 x Set of 7D U Max NHB Mats (3-Row Full Set).",
-    "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
-    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
-  ],
-  inStock: true,
-  rating: 4.5,
-  reviews: reviews["1"]
-},
 
 {
   id: "u-max-emboss",
-  name: "7D U Max Emboss 2 Row Mat",
+  name: "U Max Emboss",
   price:8499,
   description: [
     "Premium 7D U Max Emboss floor mat tailored for 2-row vehicles, delivering both luxury and protection.",
@@ -2228,10 +2105,10 @@ export const products: Product[] = [
     "Custom-fit for 2-row vehicles, easy to install, remove, and clean with a simple wipe or rinse."
   ],
   images: [
-    "/images/mats/7d-emboss.png",
+    "/images/mats/U Max Emboss01.jpg",
     "https://autoform-image.s3.ap-south-1.amazonaws.com/products/7D-Umax-Emboss-Black-grey.jpg"
   ],
-  categoryId: "7d-mat",
+  categoryId: "pu-pvc",
   additionalInfo: [
     "In The Package: 1 x Set of 7D U Max Emboss Mats (2-Row Full Set).",
     "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
@@ -2241,33 +2118,60 @@ export const products: Product[] = [
   rating: 4.8,
   reviews: reviews["1"]
 },
+//TPe Mats 
+
 {
-  id: "u-max-emboss3",
-  name: "7D U Max Emboss 3 Row Mat",
-  price:10999,
+  id: "cabin-mats-tpe",
+  name: "TPE Cabin Mat",
+  price: 11999,
   description: [
-    "Premium 7D U Max Emboss floor mat tailored for 2-row vehicles, delivering both luxury and protection.",
-    "Features a unique Emboss design for a stylish and elevated cabin appearance.",
-    "Constructed with multi-layered materials: a textured embossed top, cushioned foam center, and anti-skid backing for added safety and comfort.",
-    "Resistant to water, dust, and daily wear – ideal for all-season use.",
-    "Custom-fit for 2-row vehicles, easy to install, remove, and clean with a simple wipe or rinse."
+    "Premium TPE Cabin Mats designed for Both 2-row and 3-row vehicles, offering exceptional durability and a custom-fit experience.",
+    "Engineered with a 3-layer structure: textured TPE surface for maximum grip, cushioned foam for comfort, and anti-skid backing for stability.",
+    "Waterproof, dust-proof, and scratch-resistant – ideal for all-weather protection.",
+    "Modern U Max NHB pattern enhances your car’s interior aesthetics while ensuring easy maintenance.",
+    "Quick to install, remove, and clean with just a simple wipe or rinse."
   ],
   images: [
-    "/images/mats/7d-emboss.png",
-    "https://autoform-image.s3.ap-south-1.amazonaws.com/products/7D-Umax-Emboss-Black-grey.jpg"
+    "/images/mats/TPE-Mat.png",
+    
   ],
-  categoryId: "7d-mat",
+  categoryId: "tpe",
   additionalInfo: [
-    "In The Package: 1 x Set of 7D U Max Emboss Mats (2-Row Full Set).",
+    "In The Package: 1 x Set of TPE Cabin Mats (2-Row Full Set).",
+    "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
+    "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
+  ],
+  inStock: true,
+  rating: 4.5,
+  reviews: reviews['1']
+},
+
+{
+  id: "boot-mat-tpe",
+  name: "TPE Boot Mat",
+  price: 8499,
+  description: [
+    "High-quality TPE Boot Mat custom-made for a perfect fit, providing reliable protection for your car’s luggage area.",
+    "Features a durable TPE surface with embossed texture for a premium look and non-slip functionality.",
+    "Waterproof, dust-proof, and resistant to spills – ensures easy maintenance and long-lasting performance.",
+    "Designed for heavy-duty use, keeping your trunk clean and protected from dirt, scratches, and moisture.",
+    "Simple installation and hassle-free cleaning – just wipe or rinse for a fresh look."
+  ],
+  images: [
+    "/images/mats/BOOT MAT (1).png",
+    "/images/mats/Boot mat.jpg",
+    
+  ],
+  categoryId: "tpe",
+  additionalInfo: [
+    "In The Package: 1 x TPE Boot Mat.",
     "Note: Product images are for reference only. Actual color or pattern may vary based on availability.",
     "For support, contact +91 9278411411. Replacement only for manufacturing defects. No refunds."
   ],
   inStock: true,
   rating: 4.8,
-  reviews: reviews["1"]
+  reviews: reviews['1']
 },
-
-
 
 
 
@@ -7372,23 +7276,7 @@ Memory Foam from Autoformindia.`,
     reviews: reviews["3"]
   },
 
-  {
-    id: "5",
-    name: "Coaxial Car Speaker",
-    price: 129.99,
-    description: "High-quality coaxial speakers for superior sound. These speakers deliver crystal clear highs and deep, rich bass for an immersive audio experience. The premium components ensure excellent sound reproduction across all frequencies.",
-    images: [
-      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2069&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=1974&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1558662413-6cee6cf92bc8?q=80&w=2070&auto=format&fit=crop"
-    ],
-    categoryId: "coaxial",
-    additionalInfo: "300W peak power. 4-ohm impedance. 6.5-inch diameter. Includes mounting hardware and wiring harness.",
-    inStock: true,
-    rating: 4.7,
-    reviews: reviews["5"]
-  },
+
  
 {
   id: "android-e90",

@@ -77,14 +77,17 @@ const ContactPage = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Phone className="h-5 w-5 text-primary" />
-                  Phone
+                  Phone<br />
+                  
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  +91 9278411411<br />
-                  +91 120 4358039
-                </p>
+                  +91 9278411411 <br />
+                  +91 120 4358039<br />
+<span style={{ fontSize: '12px' }}>
+  *Mon - Sat (10:00 am - 6:00 pm)
+</span>                </p>
               </CardContent>
             </Card>
 

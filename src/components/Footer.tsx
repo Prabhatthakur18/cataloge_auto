@@ -92,7 +92,7 @@ const Footer = () => {
                   href="mailto:marketing@autoform.com" 
                   className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
                 >
-                  marketing@autoform.com
+                  marketing@autoformindia.com
                 </a>
               </li>
               
